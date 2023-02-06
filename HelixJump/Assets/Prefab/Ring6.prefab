@@ -469,6 +469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3745634505275331863}
+  - component: {fileID: -7956173955175288067}
   m_Layer: 0
   m_Name: Ring6
   m_TagString: Untagged
@@ -500,6 +501,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7956173955175288067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4085039810191921069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69883afe3006ce14cae91057326dc42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childRings:
+  - {fileID: 488843251119799548}
+  - {fileID: 4780252228039529423}
+  - {fileID: 1657149963390146026}
+  - {fileID: 5534568075612214762}
+  - {fileID: 4594270967611168390}
+  - {fileID: 1345994387680770275}
+  - {fileID: 80090025455065812}
+  - {fileID: 7930986513800043482}
+  radius: 100
+  force: 500
 --- !u!1 &4594270967611168390
 GameObject:
   m_ObjectHideFlags: 0

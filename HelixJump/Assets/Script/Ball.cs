@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    Rigidbody rb;
+    private Rigidbody rb;
     [SerializeField] private float bounceForce;
     [SerializeField] private GameObject splitPrefab;
 
@@ -16,7 +16,6 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         string materialName = collision.transform.GetComponent<MeshRenderer>().sharedMaterial.name;
-        Debug.Log(materialName);
         if(materialName == "Safe")
         {
             rb.velocity = new Vector3(rb.velocity.x, bounceForce, rb.velocity.z);
@@ -27,13 +26,11 @@ public class Ball : MonoBehaviour
         }
         else if(materialName == "Unsafe")
         {
-            Debug.Log("game over");
-
-            this.gameObject.SetActive(false);
+            GameManager.isGameOver = true;
         }
         else if(materialName == "Final")
         {
-            Debug.Log("You Win");
+            GameManager.isLevelWin = true;
         }
         
     }

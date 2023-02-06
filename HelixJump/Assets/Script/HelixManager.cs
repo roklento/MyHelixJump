@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class HelixManager : MonoBehaviour
 {
+    public float numberOfRings;
+
     [SerializeField] private GameObject[] rings;
-    [SerializeField] private int numberOfRings;
     [SerializeField] private float ringDistance;
 
     private float yPos;
 
     private void Start()
     {
+        numberOfRings = (GameManager.currentLevelIndex * 2f ) + 5f;
         for( int i = 0; i < numberOfRings; ++i)
         {
             if (i == 0)

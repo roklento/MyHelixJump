@@ -359,8 +359,10 @@
 -r:"Library/Bee/artifacts/900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/Ball.cs"
 "Assets/Script/CameraFollow.cs"
+"Assets/Script/GameManager.cs"
 "Assets/Script/HelixManager.cs"
 "Assets/Script/HelixRotator.cs"
+"Assets/Script/Ring.cs"
 -langversion:9.0
 
 /deterministic
